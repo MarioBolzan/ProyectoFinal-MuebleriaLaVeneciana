@@ -1,0 +1,46 @@
+/* Estilos para el pie de página */
+
+footer {
+    background-color: #1563ac;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-left {
+    display: flex;
+    align-items: center;
+}
+
+#footer-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#footer-right {
+    text-align: right;
+}
+
+#footer-text p {
+    margin: 0;
+}
+
+#social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon img {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px;
+}
+
+

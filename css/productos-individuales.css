@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main.producto-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: calc(100vh - 40px); 
+    padding: 20px;
+}
+
+.producto-imagen {
+    flex: 0 0 40%;
+}
+
+.producto-imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto-info {
+    flex: 0 0 50%;
+}
+
+.producto-info h2 {
+    color: #333;
+}
+
+.producto-info p {
+    color: #666;
+}
+
+.producto-info h3 {
+    color: #e44d26;
+}
+
+.btn-comprar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #45a049;
+}

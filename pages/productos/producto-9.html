@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto9</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\css\productos-individuales.css">
+    <link rel="stylesheet" href="..\..\css\cabecera.css"> 
+    <link rel="stylesheet" href="..\..\css\pie.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="logo">
+            <span id="header-text">Muebleria La Veneciana</span>
+        </div>
+        
+        <div id="nav-container">
+            <ul id="nav-list">
+                <li class="nav-item"><a href="..\..\index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="..\productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="..\presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li class="nav-item"><a href="..\contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="buttons-container">
+            <a href="..\carrito.html" class="social-icon" id="carrito-icon"><img src="..\..\imagenes\logo-carrito.png" alt="carrito"></a>
+            <a href="..\login.html" class="social-icon" id="loguin-icon"><img src="..\..\imagenes\logo-login.png" alt="login"></a>
+        </div>
+    </header>
+
+    <main class="producto-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..\..\imagenes\producto9-foto1.webp" class="d-block w-75" alt="Producto 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto9-foto2.webp" class="d-block w-75" alt="Producto 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto9-foto3.webp" class="d-block w-75" alt="Producto 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+    
+        <section class="producto-info">
+        <h2>Colchon De Cuna Bebe Infantil Suavestar 120x60 Espuma</h2>
+        <p>Sumérgete en la comodidad y la seguridad con el Colchón de Cuna para Bebés Infantil Suavestar. Con dimensiones de 120x60, este colchón está diseñado para proporcionar el mejor entorno de descanso para tu pequeño tesoro.
+            
+            El Colchón de Cuna Suavestar ofrece una superficie suave y acogedora para el sueño del bebé. Fabricado con espuma de alta calidad, proporciona el soporte necesario para el desarrollo saludable de la columna vertebral, garantizando un descanso reparador.
+            
+            La seguridad es primordial, y este colchón cumple con los estándares más exigentes para garantizar un entorno de sueño saludable para tu bebé. La cubierta exterior es suave al tacto, fácil de limpiar y cuenta con propiedades hipoalergénicas, brindando la tranquilidad que necesitas como padre.
+            
+            Con dimensiones de 120x60, este colchón se adapta perfectamente a la mayoría de las cunas estándar para bebés. La elección de materiales duraderos y resistentes asegura que este colchón crezca con tu bebé, proporcionando un apoyo confiable a lo largo de su primera etapa de crecimiento.
+            
+            El Colchón de Cuna Bebé Infantil Suavestar no solo es una elección inteligente en términos de comodidad y seguridad, sino que también se integra perfectamente en cualquier vivero gracias a su diseño neutro y funcionalidad. Brinda a tu bebé el mejor comienzo para un sueño saludable y placentero con este colchón de confianza.</p>
+    
+        <h3>Precio: $29810</h3>
+    
+        <button id="producto1-btn" class="btn btn-comprar btn-success comprar-btn">Comprar Ahora</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var agregarAlCarritoBtn = document.getElementById("producto1-btn");
+
+            agregarAlCarritoBtn.addEventListener('click', function () {
+                var producto = {
+                    nombre: 'Colchon De Cuna Bebe Infantil Suavestar 120x60 Espuma',
+                    precio: 29810,
+                    imagen: "../../imagenes/producto9-foto1.webp"
+                };
+                var carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.push(producto);
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Producto agregado al carrito',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
+        });
+    </script>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer-left">
+                <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="footer-logo">
+                <div id="footer-text">
+                    <p>© 2024 Muebleria La Veneciana, Inc</p>
+                </div>
+            </div>
+            <div id="footer-right">
+                <p>Seguinos en:</p>
+                <div id="social-icons">
+                    <a href="https://www.instagram.com/muebleria_la_veneciana/" class="social-icon" id="instagram-icon"><img src="..\..\imagenes\logo-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100053986963054&locale=es_LA" class="social-icon" id="facebook-icon"><img src="..\..\imagenes\logo-facebook.png" alt="Facebook"></a>
+                    <a href="https://web.whatsapp.com/" class="social-icon" id="whatsapp-icon"><img src="..\..\imagenes\logo-whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../../js/carrito.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

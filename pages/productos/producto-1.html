@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\css\productos-individuales.css">
+    <link rel="stylesheet" href="..\..\css\cabecera.css"> 
+    <link rel="stylesheet" href="..\..\css\pie.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="logo">
+            <span id="header-text">Muebleria La Veneciana</span>
+        </div>
+        
+        <div id="nav-container">
+            <ul id="nav-list">
+                <li class="nav-item"><a href="..\..\index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="..\productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="..\presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li class="nav-item"><a href="..\contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="buttons-container">
+            <a href="..\carrito.html" class="social-icon" id="carrito-icon"><img src="..\..\imagenes\logo-carrito.png" alt="carrito"></a>
+            <a href="..\login.html" class="social-icon" id="loguin-icon"><img src="..\..\imagenes\logo-login.png" alt="login"></a>
+        </div>
+    </header>
+
+    <main class="producto-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..\..\imagenes\producto1-foto1.webp" class="d-block w-75" alt="Producto 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto1-foto2.webp" class="d-block w-75" alt="Producto 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto1-foto3.webp" class="d-block w-75" alt="Producto 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+    
+        <section class="producto-info">
+        <h2>Chifonier Cajonera Comoda 4 Cajones Benevento Melamina Color Castaño</h2>
+        <p>Descubre la elegancia funcional con el Chifonier Cajonera Comoda 4 Cajones Benevento en Melamina Color Castaño. Este mueble no solo ofrece una solución práctica para organizar tu espacio, sino que también añade un toque de estilo a tu hogar.
+
+            Construido en melamina de alta calidad, el Chifonier Benevento garantiza durabilidad y resistencia a lo largo del tiempo. El tono cálido y acogedor del color castaño agrega calidez a cualquier habitación, complementando una variedad de estilos decorativos.
+            
+            Sus cuatro amplios cajones proporcionan un espacio generoso para guardar y organizar tu ropa, accesorios o cualquier otro objeto personal. Además, el diseño compacto del chifonier lo hace ideal para habitaciones con espacio limitado, ofreciendo una solución eficiente sin comprometer la capacidad de almacenamiento.
+            
+            La atención al detalle en el acabado y los tiradores ergonómicos resalta la artesanía de este mueble, brindando una experiencia táctil agradable y una estética atractiva. Ya sea en el dormitorio, sala de estar o cualquier área de tu hogar, el Chifonier Cajonera Comoda 4 Cajones Benevento se convierte en un elemento clave para mantener el orden con estilo. Eleva la funcionalidad y el diseño en tu hogar con esta pieza versátil y atractiva.</p>
+    
+        <h3>Precio: $46170</h3>
+    
+        <button id="producto1-btn" class="btn btn-comprar btn-success comprar-btn">Comprar Ahora</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var agregarAlCarritoBtn = document.getElementById("producto1-btn");
+
+            agregarAlCarritoBtn.addEventListener('click', function () {
+                var producto = {
+                    nombre: 'Chifonier Cajonera Comoda 4 Cajones Benevento Melamina Color Castaño',
+                    precio: 46170,
+                    imagen: "../../imagenes/producto1-foto1.webp"
+                };
+                var carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.push(producto);
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Producto agregado al carrito',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
+        });
+    </script>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer-left">
+                <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="footer-logo">
+                <div id="footer-text">
+                    <p>© 2024 Muebleria La Veneciana, Inc</p>
+                </div>
+            </div>
+            <div id="footer-right">
+                <p>Seguinos en:</p>
+                <div id="social-icons">
+                    <a href="https://www.instagram.com/muebleria_la_veneciana/" class="social-icon" id="instagram-icon"><img src="..\..\imagenes\logo-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100053986963054&locale=es_LA" class="social-icon" id="facebook-icon"><img src="..\..\imagenes\logo-facebook.png" alt="Facebook"></a>
+                    <a href="https://web.whatsapp.com/" class="social-icon" id="whatsapp-icon"><img src="..\..\imagenes\logo-whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../../js/carrito.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\css\cabecera.css"> 
+    <link rel="stylesheet" href="..\css\pie.css">
+    <link rel="stylesheet" href="..\css\index.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src=".\imagenes\logo-prueba.png" alt="Logo" id="logo">
+            <span id="header-text">Muebleria La Veneciana</span>
+        </div>
+        
+        <div id="nav-container">
+            <ul id="nav-list">
+                <li class="nav-item"><a href=".\index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href=".\pages\productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href=".\pages\presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li class="nav-item"><a href=".\pages\contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="buttons-container">
+            <a href=".\pages\carrito.html" class="social-icon" id="carrito-icon"><img src=".\imagenes\logo-carrito.png" alt="carrito"></a>
+            <a href=".\pages\login.html" class="social-icon" id="loguin-icon"><img src=".\imagenes\logo-login.png" alt="login"></a>
+        </div>
+    </header>
+
+    
+    <div id="carouselExampleCaptions" class="carousel slide container">
+        <div class="carousel-indicators">
+            <button 
+                type="button" 
+                data-bs-target="#carouselExampleCaptions" 
+                data-bs-slide-to="0" 
+                class="active"
+                aria-current="true" 
+                aria-label="Slide 1">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active text-center">
+                <img src=".\imagenes\carrucel-1.jpg" class="d-block w-100" alt="productos para la venta">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Los mejores muebles a medida</h5>
+                    <p>solicita tu presupuesto sin cargo</p>
+                </div>
+            </div>
+            <div class="carousel-item text-center">
+                <img src=".\imagenes\carrucel-2.jpg" class="d-block w-100" alt="productos para la venta">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Colchones de la mejor calidad</h5>
+                    <p>no dudes en solicitar una medida especial</p>
+                </div>
+            </div>
+            <div class="carousel-item text-center">
+                <img src=".\imagenes\carrucel-3.png" class="d-block w-100" alt="productos para la venta">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nuestra sucursal</h5>
+                    <p>Te esperamos en nuestro primer negocio</p>
+                </div>
+            </div>
+            <div class="carousel-item text-center">
+                <img src=".\imagenes\carrucel-4.jpg" class="d-block w-100" alt="productos para la venta">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bicicletas de todo tipos</h5>
+                    <p>Tenemos una gran variedad de bicicletas</p>
+                </div>
+            </div>
+            <div class="carousel-item text-center">
+                <img src=".\imagenes\carrucel-5.jpg" class="d-block w-100" alt="productos para la venta">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gracias por elegirnos</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer-left">
+                <img src=".\imagenes\logo-prueba.png" alt="Logo" id="footer-logo">
+                <div id="footer-text">
+                    <p>© 2024 Muebleria La Veneciana, Inc</p>
+                </div>
+            </div>
+            <div id="footer-right">
+                <p>Seguinos en:</p>
+                <div id="social-icons">
+                    <a href="https://www.instagram.com/muebleria_la_veneciana/" class="social-icon" id="instagram-icon"><img src="..\imagenes\logo-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100053986963054&locale=es_LA" class="social-icon" id="facebook-icon"><img src="..\imagenes\logo-facebook.png" alt="Facebook"></a>
+                    <a href="https://web.whatsapp.com/" class="social-icon" id="whatsapp-icon"><img src="..\imagenes\logo-whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+</body>
+</html>

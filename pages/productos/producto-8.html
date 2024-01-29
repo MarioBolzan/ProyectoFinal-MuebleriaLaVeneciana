@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto8</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\css\productos-individuales.css">
+    <link rel="stylesheet" href="..\..\css\cabecera.css"> 
+    <link rel="stylesheet" href="..\..\css\pie.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="logo">
+            <span id="header-text">Muebleria La Veneciana</span>
+        </div>
+        
+        <div id="nav-container">
+            <ul id="nav-list">
+                <li class="nav-item"><a href="..\..\index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="..\productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="..\presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li class="nav-item"><a href="..\contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="buttons-container">
+            <a href="..\carrito.html" class="social-icon" id="carrito-icon"><img src="..\..\imagenes\logo-carrito.png" alt="carrito"></a>
+            <a href="..\login.html" class="social-icon" id="loguin-icon"><img src="..\..\imagenes\logo-login.png" alt="login"></a>
+        </div>
+    </header>
+
+    <main class="producto-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..\..\imagenes\producto8-foto1.webp" class="d-block w-75" alt="Producto 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto8-foto2.webp" class="d-block w-75" alt="Producto 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto8-foto3.webp" class="d-block w-75" alt="Producto 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+    
+        <section class="producto-info">
+        <h2>Colchón 1 plaza de espuma Cannon Espuma Tropical blanco - 80cm x 190cm x 18cm</h2>
+        <p>Experimenta el confort tropical con el Colchón de 1 Plaza Cannon Espuma Tropical en blanco. Con unas medidas de 80cm x 190cm x 18cm, este colchón no solo es una opción funcional sino también una declaración de elegancia y bienestar para tu descanso.
+
+            La Espuma Tropical de Cannon proporciona un soporte excepcional y una sensación de suavidad que invita al descanso reparador. La combinación de confort y firmeza hace que este colchón sea ideal para garantizar un sueño de calidad, adaptándose a la forma de tu cuerpo.
+            
+            El diseño en blanco no solo aporta luminosidad a tu dormitorio, sino que también crea un ambiente fresco y relajante. Este colchón se convierte en el lienzo perfecto para personalizar tu espacio de descanso con accesorios y ropa de cama de tu elección.
+            
+            Con sus dimensiones de 80cm x 190cm x 18cm, este colchón de 1 plaza es perfecto para habitaciones individuales o como solución para espacios más reducidos. La altura de 18cm garantiza un equilibrio óptimo entre comodidad y practicidad.
+            
+            El Colchón de 1 Plaza Cannon Espuma Tropical no solo es una inversión en calidad de sueño, sino también un elemento estilizado que eleva la estética de tu dormitorio. Descubre la combinación perfecta de funcionalidad y diseño, y disfruta de noches de descanso tropical en cada rincón de tu cama. ¡Despiértate renovado y listo para enfrentar el día con este oasis de confort!</p>
+    
+        <h3>Precio: $67598</h3>
+    
+        <button id="producto1-btn" class="btn btn-comprar btn-success comprar-btn">Comprar Ahora</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var agregarAlCarritoBtn = document.getElementById("producto1-btn");
+
+            agregarAlCarritoBtn.addEventListener('click', function () {
+                var producto = {
+                    nombre: 'Colchón 1 plaza de espuma Cannon Espuma Tropical blanco - 80cm x 190cm x 18cm',
+                    precio: 67598,
+                    imagen: "../../imagenes/producto8-foto1.webp"
+                };
+                var carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.push(producto);
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Producto agregado al carrito',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
+        });
+    </script>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer-left">
+                <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="footer-logo">
+                <div id="footer-text">
+                    <p>© 2024 Muebleria La Veneciana, Inc</p>
+                </div>
+            </div>
+            <div id="footer-right">
+                <p>Seguinos en:</p>
+                <div id="social-icons">
+                    <a href="https://www.instagram.com/muebleria_la_veneciana/" class="social-icon" id="instagram-icon"><img src="..\..\imagenes\logo-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100053986963054&locale=es_LA" class="social-icon" id="facebook-icon"><img src="..\..\imagenes\logo-facebook.png" alt="Facebook"></a>
+                    <a href="https://web.whatsapp.com/" class="social-icon" id="whatsapp-icon"><img src="..\..\imagenes\logo-whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../../js/carrito.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

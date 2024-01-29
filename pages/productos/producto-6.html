@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto6</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\css\productos-individuales.css">
+    <link rel="stylesheet" href="..\..\css\cabecera.css"> 
+    <link rel="stylesheet" href="..\..\css\pie.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="logo">
+            <span id="header-text">Muebleria La Veneciana</span>
+        </div>
+        
+        <div id="nav-container">
+            <ul id="nav-list">
+                <li class="nav-item"><a href="..\..\index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="..\productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="..\presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li class="nav-item"><a href="..\contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="buttons-container">
+            <a href="..\carrito.html" class="social-icon" id="carrito-icon"><img src="..\..\imagenes\logo-carrito.png" alt="carrito"></a>
+            <a href="..\login.html" class="social-icon" id="loguin-icon"><img src="..\..\imagenes\logo-login.png" alt="login"></a>
+        </div>
+    </header>
+
+    <main class="producto-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..\..\imagenes\producto6-foto1.webp" class="d-block w-75" alt="Producto 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto6-foto2.webp" class="d-block w-75" alt="Producto 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto6-foto3.webp" class="d-block w-75" alt="Producto 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+    
+        <section class="producto-info">
+        <h2>Bicicleta infantil infantil TopMega Superhéroes Crossboy R20 frenos v-brakes color rojo con pie de apoyo</h2>
+        <p>¡Inspira la imaginación y la diversión con la Bicicleta Infantil TopMega Superhéroes Crossboy R20! Esta bicicleta, diseñada para pequeños aventureros, combina estilo, seguridad y el emocionante mundo de los superhéroes en un paquete irresistible.
+
+            Con un vibrante color rojo que captura la atención, la TopMega Superhéroes Crossboy R20 es mucho más que una bicicleta; es una declaración de estilo para los pequeños héroes en ciernes. El diseño temático de superhéroes añade un toque de magia y emoción a cada paseo.
+            
+            Equipada con frenos V-brakes, esta bicicleta garantiza un frenado seguro y efectivo, permitiendo que los pequeños ciclistas tengan un control completo sobre su viaje. La seguridad es primordial, y con los frenos V-brakes, los padres pueden tener tranquilidad mientras los niños disfrutan de su tiempo al aire libre.
+            
+            La inclusión de un pie de apoyo agrega comodidad tanto para los pequeños ciclistas como para los padres. Cuando la bicicleta no está en uso, el pie de apoyo facilita el estacionamiento y el almacenamiento, contribuyendo a la practicidad y la facilidad de uso.
+            
+            El tamaño de rodado R20 es perfecto para niños en crecimiento, ofreciendo una transición suave y cómoda de bicicletas más pequeñas a modelos más grandes. La TopMega Superhéroes Crossboy R20 proporciona un equilibrio óptimo entre estabilidad y agilidad.
+            
+            ¡Haz que cada paseo sea una aventura épica con la Bicicleta Infantil TopMega Superhéroes Crossboy R20! Además de ser una herramienta para el desarrollo de habilidades motoras, esta bicicleta ofrece a los niños la oportunidad de sumergirse en el emocionante mundo de los superhéroes mientras disfrutan del aire libre. ¡Que comience la diversión!</p>
+    
+        <h3>Precio: $156479</h3>
+    
+        <button id="producto1-btn" class="btn btn-comprar btn-success comprar-btn">Comprar Ahora</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var agregarAlCarritoBtn = document.getElementById("producto1-btn");
+
+            agregarAlCarritoBtn.addEventListener('click', function () {
+                var producto = {
+                    nombre: 'Bicicleta infantil infantil TopMega Superhéroes Crossboy R20 frenos v-brakes color rojo con pie de apoyo',
+                    precio: 156479,
+                    imagen: "../../imagenes/producto6-foto1.webp"
+                };
+                var carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.push(producto);
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Producto agregado al carrito',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
+        });
+    </script>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer-left">
+                <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="footer-logo">
+                <div id="footer-text">
+                    <p>© 2024 Muebleria La Veneciana, Inc</p>
+                </div>
+            </div>
+            <div id="footer-right">
+                <p>Seguinos en:</p>
+                <div id="social-icons">
+                    <a href="https://www.instagram.com/muebleria_la_veneciana/" class="social-icon" id="instagram-icon"><img src="..\..\imagenes\logo-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100053986963054&locale=es_LA" class="social-icon" id="facebook-icon"><img src="..\..\imagenes\logo-facebook.png" alt="Facebook"></a>
+                    <a href="https://web.whatsapp.com/" class="social-icon" id="whatsapp-icon"><img src="..\..\imagenes\logo-whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../../js/carrito.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

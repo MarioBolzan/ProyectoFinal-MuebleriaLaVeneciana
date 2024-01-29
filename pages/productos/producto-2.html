@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="..\..\css\productos-individuales.css">
+    <link rel="stylesheet" href="..\..\css\cabecera.css"> 
+    <link rel="stylesheet" href="..\..\css\pie.css">
+    
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="logo">
+            <span id="header-text">Muebleria La Veneciana</span>
+        </div>
+        
+        <div id="nav-container">
+            <ul id="nav-list">
+                <li class="nav-item"><a href="..\..\index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="..\productos.html" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="..\presupuesto.html" class="nav-link">Presupuesto</a></li>
+                <li class="nav-item"><a href="..\contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="buttons-container">
+            <a href="..\carrito.html" class="social-icon" id="carrito-icon"><img src="..\..\imagenes\logo-carrito.png" alt="carrito"></a>
+            <a href="..\login.html" class="social-icon" id="loguin-icon"><img src="..\..\imagenes\logo-login.png" alt="login"></a>
+        </div>
+    </header>
+
+    <main class="producto-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..\..\imagenes\producto2-foto1.webp" class="d-block w-75" alt="Producto 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto2-foto2.webp" class="d-block w-75" alt="Producto 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\..\imagenes\producto2-foto3.webp" class="d-block w-75" alt="Producto 3">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+    
+        <section class="producto-info">
+        <h2>Placard Diseños Modernos Puertas Corredizas 1,80 Metros X 1,80 Metros Con Cajones Blanco Correderas Metálicas</h2>
+        <p>¡Descubre la elegancia y la funcionalidad en un solo mueble con nuestro Placard Diseños Modernos Puertas Corredizas de 1,80 metros x 1,80 metros con Cajones en un deslumbrante acabado blanco y correderas metálicas!
+            
+            Este placard redefine el concepto de almacenamiento en el hogar, fusionando diseño contemporáneo con practicidad excepcional. Las puertas corredizas no solo aportan un toque moderno y estilizado, sino que también maximizan el espacio disponible en tu habitación al no requerir espacio adicional para abrirse.
+            
+            Con un generoso tamaño de 1,80 metros x 1,80 metros, este placard proporciona un amplio espacio para organizar y almacenar tu ropa, accesorios y objetos personales de manera ordenada y accesible. Los cajones incorporados ofrecen una solución conveniente para guardar artículos más pequeños, manteniendo todo perfectamente organizado.
+            
+            La calidad de construcción es evidente en cada detalle, desde las puertas corredizas suaves hasta las correderas metálicas que garantizan durabilidad y resistencia a lo largo del tiempo. El acabado blanco aporta luminosidad y frescura a cualquier ambiente, adaptándose a diversos estilos decorativos.
+            
+            Este Placard Diseños Modernos no solo es una adición funcional a tu hogar, sino también un elemento estético que realza la belleza de tu espacio. Descubre la combinación perfecta entre diseño contemporáneo y practicidad con nuestro Placard de 1,80 metros x 1,80 metros con Cajones Blanco y Puertas Corredizas Metálicas. ¡Haz de tu hogar un lugar donde el estilo y la organización se encuentren en armonía!</p>
+    
+        <h3>Precio: $169999</h3>
+    
+        <button id="producto1-btn" class="btn btn-comprar btn-success comprar-btn">Comprar Ahora</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var agregarAlCarritoBtn = document.getElementById("producto1-btn");
+
+            agregarAlCarritoBtn.addEventListener('click', function () {
+                var producto = {
+                    nombre: 'Placard Diseños Modernos Puertas Corredizas 1,80 Metros X 1,80 Metros Con Cajones Blanco Correderas Metálicas',
+                    precio: 169999,
+                    imagen: "../../imagenes/producto2-foto1.webp"
+                };
+                var carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.push(producto);
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Producto agregado al carrito',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            });
+        });
+    </script>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <div id="footer-left">
+                <img src="..\..\imagenes\logo-prueba.png" alt="Logo" id="footer-logo">
+                <div id="footer-text">
+                    <p>© 2024 Muebleria La Veneciana, Inc</p>
+                </div>
+            </div>
+            <div id="footer-right">
+                <p>Seguinos en:</p>
+                <div id="social-icons">
+                    <a href="https://www.instagram.com/muebleria_la_veneciana/" class="social-icon" id="instagram-icon"><img src="..\..\imagenes\logo-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100053986963054&locale=es_LA" class="social-icon" id="facebook-icon"><img src="..\..\imagenes\logo-facebook.png" alt="Facebook"></a>
+                    <a href="https://web.whatsapp.com/" class="social-icon" id="whatsapp-icon"><img src="..\..\imagenes\logo-whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../../js/carrito.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

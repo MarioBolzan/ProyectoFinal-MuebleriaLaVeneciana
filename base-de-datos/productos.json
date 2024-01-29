@@ -1,0 +1,76 @@
+{
+    "productos": [
+    {
+        "id": "Producto-1",
+        "titulo": "Chifonier Cajonera Comoda 4 Cajones Benevento Melamina Color Castaño",
+        "imagen": "../imagenes/producto1-foto1",
+        "precio": 46170,
+        "pages": "/pages/productos/producto-1.html"
+    },
+
+    {
+        "id": "Producto-2",
+        "titulo": "Placard Diseños Modernos Puertas Corredizas 1,80 Metros X 1,80 Metros Con Cajones Blanco Correderas Metálicas",
+        "imagen": "../imagenes/producto2-foto1",
+        "precio": 169999,
+        "pages": "/pages/productos/producto-2.html"
+    },
+
+    {
+        "id": "Producto-3",
+        "titulo": "Mesa De Luz Flotante Mesita De Luz Moderna X 2 Unidades",
+        "imagen": "../imagenes/producto3-foto1",
+        "precio": 46170,
+        "pages": "/pages/productos/producto-3.html"
+    },
+
+    {
+        "id": "Producto-4",
+        "titulo": "Bicicleta Infantil Battle R12 Ørsted Aluminium Technology Frenos V-brake Azul Y Rosa",
+        "imagen": "../imagenes/producto4-foto1",
+        "precio": 152999,
+        "pages": "/pages/productos/producto-4.html"
+    },
+
+    {
+        "id": "Producto-5",
+        "titulo": "Mountain Battle Rodado 29 Aluminio Frenos A Disco Hidráulico Color Celeste Tamaño del cuadro M",
+        "imagen": "../imagenes/producto5-foto1",
+        "precio": 599999,
+        "pages": "/pages/productos/producto-5.html"
+    },
+
+    {
+        "id": "Producto-6",
+        "titulo": "Bicicleta infantil infantil TopMega Superhéroes Crossboy R20 frenos v-brakes color rojo con pie de apoyo",
+        "imagen": "../imagenes/producto6-foto1",
+        "precio": 156479,
+        "pages": "/pages/productos/producto-6.html"
+    },
+
+    {
+        "id": "Producto-7",
+        "titulo": "Colchón 2 plazas de espuma Atma Smooth Top CHMFST blanco y gris - 190cm x 140cm",
+        "imagen": "../imagenes/producto7-foto1",
+        "precio": 247608,
+        "pages": "/pages/productos/producto-7.html"
+    },
+
+    {
+        "id": "Producto-8",
+        "titulo": "Colchón 1 plaza de espuma Cannon Espuma Tropical blanco - 80cm x 190cm x 18cm",
+        "imagen": "../imagenes/producto8-foto1",
+        "precio": 67598,
+        "pages": "/pages/productos/producto-8.html"
+    },
+
+    {
+        "id": "Producto-8",
+        "titulo": "Colchon De Cuna Bebe Infantil Suavestar 120x60 Espuma",
+        "imagen": "../imagenes/producto9-foto1",
+        "precio": 29810,
+        "pages": "/pages/productos/producto-9.html"
+    }
+
+    ]
+}

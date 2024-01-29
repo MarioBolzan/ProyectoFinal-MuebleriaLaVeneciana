@@ -1,0 +1,58 @@
+.container {
+    max-width: 400px;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.container-padre {
+    background-image: url("../imagenes/fondo-login.jpg");
+}
+
+.container-foto {
+    height: 100px;
+    width: 50px;
+}
+
+form {
+    margin-bottom: 150px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#logoutButton {
+    background-color: #d9534f; 
+    margin-bottom: 10px; 
+}
+
+#logoutButton:hover {
+    background-color: #c9302c; 
+}

@@ -1,0 +1,12 @@
+#carouselExampleCaptions img{
+    height: 800px;
+    width: auto; 
+    margin-right: 500px;
+}
+
+#carouselExampleCaptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
